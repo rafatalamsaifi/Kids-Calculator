@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Calculate using me!</h2>
+        <div class="input-btn">
+            <div id="input">
+                <input type="number" id="num1" value="">
+                <input type="number" id="num2" value="">
+            </div>
+            <div class="button">
+                <button id="btn1" onclick="refreshValues(); sum();">&plus;</button>
+                <button id="btn2" onclick="refreshValues(); subtract();">&minus;</button>
+                <button id="btn3" onclick="refreshValues(); multiply();">&times;</button>
+                <button id="btn4" onclick="refreshValues(); divide();">&divide;</button>
+            </div>
+            <div>
+                <p id="newnum"></p>
+            </div>
+        </div>
+        <p id="thnk"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
