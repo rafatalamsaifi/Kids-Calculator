@@ -1,12 +1,13 @@
-let result = document.getElementById("newnum");
 function refreshValues() {
   a = document.getElementById("num1").valueAsNumber;
   b = document.getElementById("num2").valueAsNumber;
+  result = document.getElementById("newnum");
+  comment = document.getElementById("thnk");
 }
 function sum() {
   let c = a + b;
   result.innerHTML = c;
-  document.getElementById("thnk").innerHTML = "Thank you Buddy! &#128522;";
+  comment.innerHTML = "Thank you Buddy! &#128522;";
 }
 
 function subtract() {
@@ -14,7 +15,7 @@ function subtract() {
   // let b = document.getElementById("num2").valueAsNumber;
   let c = a - b;
   result.innerHTML = c;
-  document.getElementById("thnk").innerHTML = "you are Genius! &#128517;";
+  comment.innerHTML = "you are Genius! &#128517;";
 }
 
 function multiply() {
@@ -22,7 +23,7 @@ function multiply() {
   // let b = document.getElementById("num2").valueAsNumber;
   let c = a * b;
   result.innerHTML = c;
-  document.getElementById("thnk").innerHTML = "Weldone! &#128523";
+  comment.innerHTML = "Weldone! &#128523";
 }
 
 function divide() {
@@ -31,5 +32,5 @@ function divide() {
   let c = a / b;
   c = c.toFixed(2);
   result.innerHTML = c;
-  document.getElementById("thnk").innerHTML = "Perfect! &#128527;";
+  comment.innerHTML = "Perfect! &#128527;";
 }
